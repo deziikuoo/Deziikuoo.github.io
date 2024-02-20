@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Interface</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .chat-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .chat-messages {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .chat-message {
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .chat-message.from-me {
+        background-color: #dcf8c6;
+      }
+      .chat-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .chat-submit {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chat-container">
+      <ul class="chat-messages">
+        <li class="chat-message">Hi there!</li>
+        <li class="chat-message from-me">Hello!</li>
+      </ul>
+      <input
+        type="text"
+        class="chat-input"
+        placeholder="Type your message..."
+      />
+      <button class="chat-submit">Send</button>
+    </div>
+  </body>
+</html>
